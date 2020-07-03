@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader">
+  </div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <h2>HELLO</h2>
+    <p>I can make a linear gradient.</p>
+  </div>
+  <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+  <h3 style="text-align:center">User Profile Card</h3>
+  <div class="card">
+    <img src="images/image.jpg" style="width:100%">
+    <h1>Marie Githinji</h1>
+    <p class="title">Co-founder and Executive Director</p>
+    <p>AkiraChix</p>
+    <div style="margin: 24px 0;"> 
+      <a href="#"><i class="fa fa-twitter"></i></a>  
+      <a href="#"><i class="fa fa-linkedin"></i></a>  
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <p><button>Contact</button></p>
+  </div>
+  <h4 style="text-align:center">Product Card</h4>
+
+<div class="card">
+  <img src="images/down.jpg" style="width:100%">
+  <h1>canvas shoes</h1>
+  <p class="price">$20.9</p>
+  <p>Best canvas shoes girls white near me and get free shipping</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<!-- <h1></h1>
+<div class="chip">
+  <img src="images/down.jpg" width="96" height="96">
+  John Doe
+</div> -->
+
+</body>
+</html>
